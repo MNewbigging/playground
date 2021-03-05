@@ -1,15 +1,14 @@
 .card {
-  width: 160px;
+  width: 170px;
   height: 320px;
+  //box-shadow: 2px 2px 2px 2px black;
+  border: 1px solid black;
 
   display: flex;
   flex-direction: column;
 
-  border: 1px solid black;
-
   .upper {
     flex: 0 0 120px;
-    border-bottom: 1px solid black;
   }
 
   .lower {
@@ -34,7 +33,6 @@
       flex: 0 0 auto;
       align-self: center;
       width: 80px;
-      border: 1px solid black;
       border-radius: 25px;
       padding: 3px;
       display: flex;

@@ -7,18 +7,19 @@ interface CardProps {
   points: string[];
   blurb: string;
   link: string;
+  buttonClass: string;
 }
 
 export class Card extends React.PureComponent<CardProps> {
   public render() {
-    const { logo, blurb, link } = this.props;
+    const { logo, blurb, link, buttonClass } = this.props;
     return (
       <div className={'card'}>
         <div className={'upper'}>{logo}</div>
         <div className={'lower'}>
           <div className={'points'}>{this.renderPoints()}</div>
           <div className={'blurb'}>{blurb}</div>
-          <div className={'play-button'}>
+          <div className={'play-button ' + buttonClass}>
             <a href={link} target={'_blank'}>
               play
             </a>
