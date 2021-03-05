@@ -29,18 +29,31 @@ export class Playground extends React.PureComponent {
     return (
       <div className={'playground'}>
         <div className={'navbar'}>
-          <div className={'games'} onClick={() => this.pgState.setSelectedTab(NavTab.GAMES)}>
+          <div
+            className={'games heading ' + this.getTabClass(NavTab.GAMES)}
+            onClick={() => this.pgState.setSelectedTab(NavTab.GAMES)}
+          >
             Games
           </div>
-          <div className={'apps'} onClick={() => this.pgState.setSelectedTab(NavTab.APPS)}>
+          <div
+            className={'apps heading ' + this.getTabClass(NavTab.APPS)}
+            onClick={() => this.pgState.setSelectedTab(NavTab.APPS)}
+          >
             Apps
           </div>
-          <div className={'random'} onClick={() => this.pgState.setSelectedTab(NavTab.RANDOM)}>
+          <div
+            className={'random heading ' + this.getTabClass(NavTab.RANDOM)}
+            onClick={() => this.pgState.setSelectedTab(NavTab.RANDOM)}
+          >
             Random
           </div>
         </div>
         <div className={'body'}>{toRender}</div>
       </div>
     );
+  }
+
+  private getTabClass(tab: NavTab) {
+    return tab === this.pgState.selectedTab ? 'active' : '';
   }
 }

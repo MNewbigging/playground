@@ -1,23 +1,41 @@
 .card {
-  width: 170px;
-  height: 320px;
+  flex: 0 0 auto;
+  width: 250px;
+  height: 400px;
   margin: 15px;
-  //box-shadow: 2px 2px 2px 2px black;
-  border: 1px solid black;
+  //box-shadow: 5px 5px 15px 0px #888585;
+  background-color: #e8e8e8;
+  border-radius: 10px;
 
   display: flex;
   flex-direction: column;
 
   .upper {
-    flex: 0 0 120px;
+    flex: 0 0 auto;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+    }
   }
 
   .lower {
     flex: 1 1 auto;
-    padding: 5px;
-
+    padding: 0px 20px 15px 20px;
     display: flex;
     flex-direction: column;
+
+    .title {
+      flex: 0 0 20px;
+      align-self: center;
+      margin-bottom: 5px;
+    }
 
     .points {
       flex: 1 1 auto;
@@ -28,6 +46,7 @@
 
     .blurb {
       flex: 2 1 auto;
+      text-align: center;
     }
 
     .play-button {
@@ -42,6 +61,7 @@
       align-items: center;
 
       a {
+        align-self: center;
         text-decoration: none;
       }
     }

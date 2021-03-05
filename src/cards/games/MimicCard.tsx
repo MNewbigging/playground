@@ -13,7 +13,7 @@ export class MimicCard extends React.PureComponent {
         blurb={
           "Take turns making light sequences and matching your opponent's; they get longer with each round!"
         }
-        link={''}
+        link={'https://mnewbigging.github.io/mimic'}
         buttonClass={'mimic-play-button'}
       />
     );

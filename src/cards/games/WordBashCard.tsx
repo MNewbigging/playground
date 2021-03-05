@@ -18,11 +18,7 @@ export class WordBashCard extends React.PureComponent {
   }
 
   private renderWbLogo() {
-    return (
-      <div className={'wb-logo'}>
-        <div>WORD</div>
-        <div>BASH</div>
-      </div>
-    );
+    return <div className={'wb-logo'}>{/* <div>WORD</div>
+        <div>BASH</div> */}</div>;
   }
 }

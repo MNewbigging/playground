@@ -3,7 +3,7 @@ import { action, observable } from 'mobx';
 export enum NavTab {
   GAMES = 'GAMES',
   APPS = 'APPS',
-  RANDOM = 'RANOMD',
+  RANDOM = 'RANDOM',
 }
 
 export class PlaygroundState {
