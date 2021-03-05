@@ -1,0 +1,49 @@
+.card {
+  width: 160px;
+  height: 320px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid black;
+
+  .upper {
+    flex: 0 0 120px;
+    border-bottom: 1px solid black;
+  }
+
+  .lower {
+    flex: 1 1 auto;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    .points {
+      flex: 1 1 auto;
+      ul {
+        margin: 0;
+      }
+    }
+
+    .blurb {
+      flex: 2 1 auto;
+    }
+
+    .play-button {
+      flex: 0 0 auto;
+      align-self: center;
+      width: 80px;
+      border: 1px solid black;
+      border-radius: 25px;
+      padding: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
