@@ -26,13 +26,20 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: 'file-loader?name=../assets/[name].[ext]',
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: 'file-loader?name=./assets/[name].[ext]',
       },
-      {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      },
+      // {
+      //   test: /\.svg$/,
+      //   use: [
+      //     {
+      //       loader: '@svgr/webpack',
+      //       options: {
+      //         name: './assets/[name].[ext]',
+      //       },
+      //     },
+      //   ],
+      // },
     ],
   },
 
