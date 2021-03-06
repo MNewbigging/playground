@@ -10,7 +10,7 @@ export class MimicCard extends React.PureComponent {
   public render() {
     return (
       <Card
-        logo={this.renderLogo()}
+        logo={<div className={'mimic-logo'}></div>}
         title={'Mimic'}
         icons={[<TwoPlayerIcon />, <OnlineIcon />]}
         blurb={
@@ -19,9 +19,5 @@ export class MimicCard extends React.PureComponent {
         link={'https://mnewbigging.github.io/mimic'}
       />
     );
-  }
-
-  private renderLogo() {
-    return <div className={'mimic-logo'}>mimic</div>;
   }
 }

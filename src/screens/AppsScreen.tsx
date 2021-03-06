@@ -1,15 +1,14 @@
 import React from 'react';
-import { MemoRuneCard } from '../cards/games/MemoRuneCard';
-import { MimicCard } from '../cards/games/MimicCard';
-import { WordBashCard } from '../cards/games/WordBashCard';
+
+import { BletherCard } from '../cards/apps/BletherCard';
+import { TaskLogCard } from '../cards/apps/TaskLogCard';
 
 export class AppsScreen extends React.PureComponent {
   public render() {
     return (
       <>
-        <WordBashCard />
-        <MemoRuneCard />
-        <MimicCard />
+        <TaskLogCard />
+        <BletherCard />
       </>
     );
   }

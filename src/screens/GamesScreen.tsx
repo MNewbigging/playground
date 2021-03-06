@@ -11,12 +11,6 @@ export class GamesScreen extends React.PureComponent {
         <WordBashCard />
         <MemoRuneCard />
         <MimicCard />
-        <WordBashCard />
-        <MemoRuneCard />
-        <MimicCard />
-        <WordBashCard />
-        <MemoRuneCard />
-        <MimicCard />
       </>
     );
   }

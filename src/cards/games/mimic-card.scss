@@ -1,30 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 .mimic-logo {
   width: 100%;
   height: 100%;
-  font-size: 30pt;
-  font-family: 'Poppins', sans-serif;
-  word-break: break-all;
-
-  background-color: #7d98a1;
-  color: #eef1ef;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.mimic-play-button {
-  background-color: #7d98a1;
-  transition: background-color 0.2s linear;
-
-  &:hover {
-    background-color: #0a2e36;
-  }
-  a {
-    font-family: 'Poppins', sans-serif;
-    color: #eef1ef;
-  }
+  border-radius: 50%;
+  background: url('../../../dist//assets/mimic.png');
+  background-size: cover;
+  background-position: center;
 }

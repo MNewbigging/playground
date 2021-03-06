@@ -15,17 +15,3 @@
   justify-content: center;
   align-items: center;
 }
-
-.mr-play-button {
-  font-family: 'Stick', sans-serif;
-  background-color: #a7a7a7;
-  transition: background-color 0.2s linear;
-
-  &:hover {
-    background-color: #2f3a39;
-  }
-
-  a {
-    color: #d9d9d9;
-  }
-}
