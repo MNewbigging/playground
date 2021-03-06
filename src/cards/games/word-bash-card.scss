@@ -7,24 +7,4 @@
   height: 100%;
   border-radius: 50%;
   font-weight: 200;
-  font-family: 'Raleway', sans-serif;
-  word-break: break-all;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.wb-play-button {
-  background-color: #56766b;
-  transition: background-color 0.2s linear;
-  &:hover {
-    background-color: #c59849;
-  }
-
-  a {
-    color: white;
-    font-family: 'Raleway', sans-serif;
-  }
 }

@@ -1,7 +1,16 @@
 import React from 'react';
+import { MemoRuneCard } from '../cards/games/MemoRuneCard';
+import { MimicCard } from '../cards/games/MimicCard';
+import { WordBashCard } from '../cards/games/WordBashCard';
 
 export class AppsScreen extends React.PureComponent {
   public render() {
-    return <div>Apps</div>;
+    return (
+      <>
+        <WordBashCard />
+        <MemoRuneCard />
+        <MimicCard />
+      </>
+    );
   }
 }

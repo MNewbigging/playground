@@ -8,17 +8,12 @@ export class WordBashCard extends React.PureComponent {
   public render() {
     return (
       <Card
-        logo={this.renderWbLogo()}
+        logo={<div className={'wb-logo'}></div>}
+        title={'Word Bash'}
         points={['Single player', 'Offline']}
         blurb={'Make words out of jumbled letters. Try for longer words to get more points.'}
         link={'https://mnewbigging.github.io/word-bash'}
-        buttonClass={'wb-play-button'}
       />
     );
-  }
-
-  private renderWbLogo() {
-    return <div className={'wb-logo'}>{/* <div>WORD</div>
-        <div>BASH</div> */}</div>;
   }
 }

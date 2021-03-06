@@ -12,20 +12,6 @@ import './playground.scss';
 export class Playground extends React.PureComponent {
   private readonly pgState = new PlaygroundState();
   public render() {
-    // Which screen are we looking at?
-    let toRender: JSX.Element;
-    switch (this.pgState.selectedTab) {
-      case NavTab.GAMES:
-        toRender = <GamesScreen />;
-        break;
-      case NavTab.APPS:
-        toRender = <AppsScreen />;
-        break;
-      case NavTab.RANDOM:
-        toRender = <RandomScreen />;
-        break;
-    }
-
     return (
       <div className={'playground'}>
         <div className={'navbar'}>
@@ -48,9 +34,19 @@ export class Playground extends React.PureComponent {
             Random
           </div>
         </div>
-        <div className={'body'}>{toRender}</div>
+        <div className={'body'}>
+          <div className={'view-panels ' + this.pgState.selectedTab}>
+            <div className={'panel'}>{this.isActivePanel(NavTab.GAMES) && <GamesScreen />}</div>
+            <div className={'panel'}>{this.isActivePanel(NavTab.APPS) && <AppsScreen />}</div>
+            <div className={'panel'}>{this.isActivePanel(NavTab.RANDOM) && <RandomScreen />}</div>
+          </div>
+        </div>
       </div>
     );
+  }
+
+  private isActivePanel(tab: NavTab) {
+    return tab === this.pgState.selectedTab;
   }
 
   private getTabClass(tab: NavTab) {

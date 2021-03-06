@@ -9,10 +9,10 @@ export class MemoRuneCard extends React.PureComponent {
     return (
       <Card
         logo={this.renderLogo()}
+        title={'Memo Rune'}
         points={['1 or 2 players', 'Offline']}
         blurb={'Pair matching runes, with penalties for matching on certain dangerous runes.'}
         link={'https://mnewbigging.github.io/memo-rune'}
-        buttonClass={'mr-play-button'}
       />
     );
   }

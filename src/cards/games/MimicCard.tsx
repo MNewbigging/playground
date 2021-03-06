@@ -9,12 +9,12 @@ export class MimicCard extends React.PureComponent {
     return (
       <Card
         logo={this.renderLogo()}
+        title={'Mimic'}
         points={['2 player', 'Online']}
         blurb={
           "Take turns making light sequences and matching your opponent's; they get longer with each round!"
         }
         link={'https://mnewbigging.github.io/mimic'}
-        buttonClass={'mimic-play-button'}
       />
     );
   }

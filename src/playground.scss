@@ -1,3 +1,5 @@
+@import './playground-palette.scss';
+
 .playground {
   width: 100%;
   height: 100%;
@@ -7,7 +9,7 @@
 
   .navbar {
     flex: 0 0 60px;
-    background-color: #7d97a1;
+    background-color: $color-light-blue;
     color: #ccc;
     display: flex;
     justify-content: space-evenly;
@@ -26,12 +28,44 @@
   .body {
     flex: 1 1 auto;
     display: flex;
-    padding: 20px;
-    background-color: #1f2328;
+    background-color: $color-black;
     overflow: auto;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    .view-panels {
+      width: 300%;
+      height: calc(100% - 100px);
+      position: fixed;
+      transition: all 0.3s ease-in-out;
+
+      display: flex;
+      justify-content: space-evenly;
+
+      &.GAMES {
+        left: 0;
+      }
+
+      &.APPS {
+        left: -100%;
+      }
+
+      &.RANDOM {
+        left: -200%;
+      }
+
+      .panel {
+        height: 100%;
+        width: 33.6%;
+        padding: 20px 40px 0px 40px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y: auto;
+      }
+    }
   }
 }

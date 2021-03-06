@@ -1,11 +1,14 @@
+@import '../playground-palette.scss';
+
 .card {
   flex: 0 0 auto;
   width: 250px;
   height: 400px;
   margin: 15px;
-  //box-shadow: 5px 5px 15px 0px #888585;
-  background-color: #e8e8e8;
+  background-color: $color-white;
   border-radius: 10px;
+  transition: all 0.2s linear;
+  animation: appear 0.4s ease-in;
 
   display: flex;
   flex-direction: column;
@@ -59,11 +62,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: $color-light-blue;
+      transition: background-color 0.2s linear;
+
+      &:hover {
+        background-color: $color-dark-blue;
+      }
 
       a {
         align-self: center;
         text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: $color-white;
       }
     }
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
