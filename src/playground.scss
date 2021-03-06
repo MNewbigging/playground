@@ -74,14 +74,10 @@
 ::-webkit-scrollbar {
   width: 10px;
   background-color: $color-black;
-  z-index: 200;
-  position: relative;
 }
 
 ::-webkit-scrollbar-thumb {
   background: $color-white;
-  z-index: 200;
-  position: relative;
 
   &:hover {
     background: white;
